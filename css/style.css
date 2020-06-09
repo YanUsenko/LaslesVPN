@@ -19,6 +19,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .button-b {
@@ -168,12 +169,15 @@ body {
   justify-content: space-between;
   padding: 0;
   cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease 0s;
 }
 
 .mobile-menu-button_line {
   background-color: #F53855;
   height: 7px;
   border-radius: 4px;
+  transition: all 0.5s ease 0s;
 }
 
 .mobile-menu_nav {
@@ -263,6 +267,14 @@ body {
   }
   .header-menu_buttons {
     display: none;
+  }
+  .focus {
+    width: 45px;
+    transition: all 0.5s ease 0s;
+  }
+  .line-focus {
+    width: 35%;
+    transition: all 0.5s ease 0s;
   }
   .mobile-botton {
     display: flex;
@@ -875,7 +887,7 @@ body {
 
 .slick-slide {
   width: 400px;
-  height: 230px;
+  min-height: 230px;
   transition-duration: 2000ms;
   outline: none;
   active-outline: none;
@@ -926,7 +938,7 @@ body {
 .slider__item {
   padding: 30px;
   width: 400px;
-  height: 230px;
+  min-height: 230px;
   background: #FFFFFF;
   border: 2px solid #DDDDDD;
   box-sizing: border-box;
@@ -982,8 +994,28 @@ body {
   user-select: none;
 }
 
-.user__avatar {
-  width: 50px;
+.user__avatar1 {
+  width: 54px;
+  height: 50px;
+  background-image: url("/img/user/img1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user__avatar2 {
+  width: 54px;
+  height: 50px;
+  background-image: url("/img/user/img2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user__avatar3 {
+  width: 54px;
+  height: 50px;
+  background-image: url("/img/user/img3.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .user__text {
@@ -1056,6 +1088,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .user__name {
+    font-size: 14px;
+  }
+  .user__country {
+    font-size: 12px;
+  }
   .slider {
     margin-left: 15px;
   }
@@ -1064,7 +1102,7 @@ body {
 @media (max-width: 430px) {
   .slick-slide {
     width: 300px;
-    height: 300px;
+    padding-bottom: 20px;
   }
 }
 
