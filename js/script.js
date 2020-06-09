@@ -1,9 +1,18 @@
 const menuBtn = document.querySelector(".mobile-menu-button");
 const menu = document.querySelector(".mobile-menu_nav");
+const menuLine = document.querySelector(".focus_line");
 
 menuBtn.addEventListener("click", function() {
     menu.classList.toggle("active");
 });
+
+menuBtn.addEventListener("click", function() {
+    menuLine.classList.toggle("line-focus");
+});
+
+document.querySelector(".mobile-menu-button").onclick = function(){
+    this.classList.toggle("focus");
+}
 
 $(document).ready(function(){
     $('.slider').slick({
