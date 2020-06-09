@@ -20,6 +20,16 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
+  padding: 13px 45px;
+  border: 1px solid #0B132A;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #0B132A;
+  transition: all 0.3s ease 0s;
 }
 
 .button-b {
@@ -28,6 +38,13 @@ body {
   border: 1px solid #F53855;
   box-sizing: border-box;
   border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.button-b:hover {
+  color: #ffffff;
+  background-color: #F53838;
+  transition: all 0.3s ease 0s;
 }
 
 .vertical-line {
@@ -157,6 +174,12 @@ body {
   color: #4F5665;
   text-decoration: none;
   margin-right: 40px;
+  transition: all 0.1s ease 0s;
+}
+
+.header-menu_nav_link:hover {
+  color: #0B132A;
+  transition: all 0.1s ease 0s;
 }
 
 .mobile-menu-button {
@@ -264,6 +287,7 @@ body {
 @media (max-width: 768px) {
   .mobile-menu_nav {
     max-width: 95%;
+    padding-bottom: 10px;
   }
   .header-menu_buttons {
     display: none;
@@ -280,7 +304,7 @@ body {
     display: flex;
     margin-top: 20px;
     border: none;
-    padding: 0;
+    padding: 5px;
     margin-right: 30px;
     margin-left: 30px;
   }
@@ -321,6 +345,12 @@ body {
   padding: 18px 75px;
   z-index: 1;
   margin-top: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.offer-block_button:hover {
+  background-color: #F53855;
+  transition: all 0.3s ease 0s;
 }
 
 .offer-block_button-s {
@@ -750,6 +780,7 @@ body {
   background: #F53838;
   color: #FFFFFF;
   z-index: 999;
+  transition: all 0.3s ease 0s;
 }
 
 .item-pricing__button_r::after {
@@ -762,6 +793,12 @@ body {
   border-radius: 10px;
   margin-left: -90px;
   z-index: -1;
+}
+
+.item-pricing__button_r:hover {
+  background-color: #F53855;
+  transition: all 0.3s ease 0s;
+  padding: 15px 60px;
 }
 
 .body__text {
@@ -912,6 +949,12 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
   cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+.arrows-prev:hover {
+  background-color: #f538382c;
+  transition: all 0.2s ease 0s;
 }
 
 .arrows-next {
@@ -926,6 +969,12 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
   cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+.arrows-next:hover {
+  background-color: #F53855;
+  transition: all 0.2s ease 0s;
 }
 
 .slider {
@@ -1250,6 +1299,12 @@ body {
   color: #4F5665;
   margin-bottom: 10px;
   text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer__link:hover {
+  color: #0B132A;
+  transition: all 0.2s;
 }
 
 .social__icon {
